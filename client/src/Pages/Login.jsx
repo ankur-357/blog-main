@@ -18,7 +18,7 @@ const Login = () => {
       password,
     };
 
-    const res = await fetch("http://localhost:4000/login", {
+    const res = await fetch("https://react-backend-new.onrender.com/login", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
