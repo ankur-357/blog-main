@@ -11,7 +11,7 @@ const Postpage = () => {
   useEffect(() => {
     const getPostById = async () => {
       const res = await axios.get(
-        `http://localhost:4000/post/${id}`
+        `https://react-backend-new.onrender.com/post/${id}`
       );
       setPostInfo(res.data);
     };
@@ -21,7 +21,7 @@ const Postpage = () => {
     console.log("hai");
     e.preventDefault();
     const res = await axios.delete(
-      `http://localhost:4000/post/${id}`,
+      `https://react-backend-new.onrender.com/post/${id}`,
       {
         withCredentials: true,
         headers: {
