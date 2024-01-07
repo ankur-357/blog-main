@@ -21,7 +21,7 @@ const Register = () => {
       };
       console.log(data);
 
-      const res = await fetch("http://localhost:4000/register", {
+      const res = await fetch("https://react-backend-new.onrender.com/register", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
