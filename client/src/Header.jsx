@@ -13,7 +13,7 @@ const Header = () => {
   }, []);
   const handleLogout = (e) => {
     e.preventDefault();
-    fetch("http://localhost:4000/logout", {
+    fetch("https://react-backend-new.onrender.com/logout", {
       method: "POST",
       credentials: "include",
       headers: {
