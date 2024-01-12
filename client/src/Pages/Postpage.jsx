@@ -11,7 +11,7 @@ const Postpage = () => {
   useEffect(() => {
     const getPostById = async () => {
       const res = await axios.get(
-        `https://react-backend-new.onrender.com/post/${id}`
+        `https://blog-main-hxzfljnsf-ankur-357.vercel.app/post/${id}`
       );
       setPostInfo(res.data);
     };
@@ -21,7 +21,7 @@ const Postpage = () => {
     console.log("hai");
     e.preventDefault();
     const res = await axios.delete(
-      `https://react-backend-new.onrender.com/post/${id}`,
+      `https://blog-main-hxzfljnsf-ankur-357.vercel.app/post/${id}`,
       {
         withCredentials: true,
         headers: {
