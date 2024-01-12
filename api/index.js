@@ -52,7 +52,7 @@ app.use(
 app.use(cors(
   {
     credentials: true,
-    origin: "https://blog-main-2zf5.vercel.app/",
+    origin: "https://blog-main-2zf5.vercel.app",
     methods: "GET,POST,PUT,DELETE",
   }
 ));
