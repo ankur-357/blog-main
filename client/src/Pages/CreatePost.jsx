@@ -17,7 +17,7 @@ const CreatePost = () => {
     formData.append("content", content);
     formData.append("image", files);
 
-    await axios.post("https://react-backend-new.onrender.com/post", formData, {
+    await axios.post("https://blog-main-hxzfljnsf-ankur-357.vercel.app/post", formData, {
       withCredentials: true,
       headers: {
         "Content-Type": "multipart/form-data",
