@@ -6,7 +6,7 @@ const HomePage = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     async function getPost() {
-      const post = await axios.get("https://react-backend-new.onrender.com/post", {
+      const post = await axios.get("https://blog-main-hxzfljnsf-ankur-357.vercel.app/post", {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
