@@ -5,7 +5,7 @@ import { UserContext } from "./UserContext";
 const Header = () => {
   const { setUserInfo, userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch("https://blog-main-hxzfljnsf-ankur-357.vercel.app/profile", {
+    fetch("https://blog-main-one.vercel.app/profile", {
       credentials: "include",
     }).then((res) => {
       res.json().then((userinfo) => setUserInfo(userinfo));
@@ -13,7 +13,7 @@ const Header = () => {
   }, []);
   const handleLogout = (e) => {
     e.preventDefault();
-    fetch("https://blog-main-hxzfljnsf-ankur-357.vercel.app/logout", {
+    fetch("https://blog-main-one.vercel.app/logout", {
       method: "POST",
       credentials: "include",
       headers: {
