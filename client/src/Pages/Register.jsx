@@ -21,7 +21,7 @@ const Register = () => {
       };
       console.log(data);
 
-      const res = await fetch("https://react-backend-new.onrender.com/register", {
+      const res = await fetch("https://blog-main-hxzfljnsf-ankur-357.vercel.app/register", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
