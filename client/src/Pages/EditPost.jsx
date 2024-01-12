@@ -13,7 +13,7 @@ export default function EditPost() {
   const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch("https://react-backend-new.onrender.com/edit/" + id).then((response) => {
+    fetch("https://blog-main-hxzfljnsf-ankur-357.vercel.app/edit/" + id).then((response) => {
       response.json().then((postInfo) => {
         setTitle(postInfo.title);
         setContent(postInfo.content);
@@ -35,7 +35,7 @@ export default function EditPost() {
       data.append("image", files);
 
       const response = await fetch(
-        `https://react-backend-new.onrender.com/edit/${id}`,
+        `https://blog-main-hxzfljnsf-ankur-357.vercel.app/edit/${id}`,
         {
           method: "PUT",
           body: data,
@@ -58,7 +58,7 @@ export default function EditPost() {
       data.append("image", fileName);
 
       const response = await fetch(
-        `https://react-backend-new.onrender.com/post/${id}`,
+        `https://blog-main-hxzfljnsf-ankur-357.vercel.app/post/${id}`,
         {
           method: "PUT",
           body: data,
